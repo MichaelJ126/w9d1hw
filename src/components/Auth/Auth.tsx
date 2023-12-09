@@ -13,21 +13,20 @@ import {
     Box,
     Button,
     Typography,
-    Snackbar, //allow us to have an alert box popup in the corner for signin errors or success alert
+    Snackbar, 
     Stack,
     Divider,
-    CircularProgress, //Loading symbol
+    CircularProgress, 
     Dialog,
     DialogContent,
     Alert } from '@mui/material' 
 
 
-// internal imports
+
 import { NavBar, InputText, InputPassword } from '../sharedComponents'
 import shopImage from '../../assets/images/cars.jpg'; 
 
 
-// creating our dictionary/object for our css styling 
 
 const authStyles = {
     main: {
@@ -43,8 +42,7 @@ const authStyles = {
     stack: {
         width: '400px',
         marginTop: '100px',
-        marginRight: 'auto', //used a lot to center your div
-        marginLeft: 'auto',
+        marginRight: 'auto',
         color: 'white'
     },
     button: {
@@ -53,8 +51,6 @@ const authStyles = {
     }
 }
 
-
-// creating our interfaces 
 
 interface Props {
     title: string
@@ -73,7 +69,7 @@ interface SubmitProps {
 }
 
 
-// creating a literal union type for our different alerts 
+
 export type MessageType = 'error' | 'warning' | 'info' | 'success'
 
 
